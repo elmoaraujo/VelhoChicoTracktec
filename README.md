@@ -1,41 +1,44 @@
-# WebAgenda_JavaEE
-Aplicação web utilizando Java EE e o Tomcat 10. A aplicação permite criar, ler, atualizar e deletar (CRUD) clientes. Todas os cadastros são feitos utilizando o MySQL.
+# Velho Chico Tracktec
 
-1. [Imagens da Aplicação](#head1)
-2. [Tecnologias](#head2)
-3. [Como Executar](#head3)
+Aplicação web desenvolvida em **Java EE**, utilizando **Apache Tomcat**, voltada para o **cadastramento e gerenciamento de informações relacionadas à piscicultura**.  
+O sistema permite realizar operações de **criação, leitura, atualização e exclusão (CRUD)** de registros, com persistência de dados em **MySQL**.
 
-# <span id="head1">1. Imagens da Aplicação<span/>
-## 1.1. Tela Inicial
-<img src="https://github.com/GustavoHFMO/WebAgenda_JavaEE/blob/main/WebContent/imagens/A.PNG" width="300">
+A proposta do projeto é auxiliar na organização e no controle de dados do setor aquícola, contribuindo para a gestão das atividades produtivas.
 
-## 1.2. Tela de Cadastro
-<img src="https://github.com/GustavoHFMO/WebAgenda_JavaEE/blob/main/WebContent/imagens/B.PNG" width="300">
+---
 
-## 1.3. Tela de Listagem de Clientes
-<img src="https://github.com/GustavoHFMO/WebAgenda_JavaEE/blob/main/WebContent/imagens/C.PNG" width="300">
+1. [Imagens da Aplicação](#head1)  
+2. [Tecnologias](#head2)  
+3. [Como Executar](#head3)  
 
-## 1.4. Tela de Edição de um Cliente
-<img src="https://github.com/GustavoHFMO/WebAgenda_JavaEE/blob/main/WebContent/imagens/D.PNG" width="300">
+---
 
 
-# <span id="head2">2. Tecnologias<span/>
-* [Eclipse EE](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers)
-* [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
-* [MySQL Connector/j](https://dev.mysql.com/downloads/connector/j/)
 
+# <span id="head2">2. Tecnologias</span>
 
-# <span id="head3">3. Como Executar<span/>
-```
-# Clonando o repositório
-$ https://github.com/GustavoHFMO/WebAgenda_JavaEE.git
+- [Java EE](https://www.oracle.com/java/technologies/java-ee-glance.html)
+- [Apache Tomcat 10](https://tomcat.apache.org/)
+- [Eclipse IDE for Enterprise Java](https://www.eclipse.org/)
+- [MySQL](https://www.mysql.com/)
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+- [MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/)
 
-# Importar o projeto no Eclipse EE
+---
 
-# Adicionar o MySQL Connector/j no caminho /WebAgenda_JavaEE/WebContent/WEB_INF/lib/
+# <span id="head3">3. Como Executar</span>
 
-# Executar a query WebAgenda_JavaEE/sql - criar tabela.sql no MySQL Workbench
+```text
+1. Importar o projeto no Eclipse IDE for Enterprise Java
 
-# Executar o projeto no Eclipse EE, botão direito no projeto -> run -> run on server
+2. Adicionar o MySQL Connector/J no diretório:
+   /WebContent/WEB-INF/lib/
 
-```
+3. Executar o script SQL localizado em:
+   /sql - criar tabela.sql
+   no MySQL Workbench
+
+4. Configurar o servidor Apache Tomcat 10 no Eclipse
+
+5. Executar o projeto:
+   Botão direito no projeto -> Run As -> Run on Server
