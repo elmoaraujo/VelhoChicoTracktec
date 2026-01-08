@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+
+<title>Agenda de Contatos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+
+<div class="main"> 
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Tracktec</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="novoContato.html">CADASTRAR PEIXE</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Pesquisar">
+                <a href=""> <button class="btn">Pesquisar</button></a>
+            </div>
+
+        </div> 
+
+
+
+
+<div class="novo">
+	
+
+	<form method="get" action="insert">
+
+		<table>
+			<tr><td><input class="Caixa" type="text" name="nome"
+					placeholder="Nome"></td></tr>
+
+			<tr><td><input class="Caixa" type="text" name="peso"
+					placeholder="Peso"></td></tr>
+
+			<tr><td><input class="Caixa" type="text" name="éspecie"
+					placeholder="Éspecie"></td></tr>
+					
+			<tr><td><input class="Caixa" type="text" name="qualidadedaagua"
+					placeholder="Qualidadedaagua"></td></tr>
+		</table>
+
+		<input class="Botao" type="submit" value="Cadastrar Peixe">
+		<script src="validador.js"></script>
+	</form>
+</div>
+</body>
+</html>
